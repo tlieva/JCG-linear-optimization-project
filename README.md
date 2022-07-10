@@ -1,6 +1,6 @@
 # JCG Global Air Service - Linear Optimization Case Study
 
-Repository for a linear optimization case study completed for _BUS4024 – Business Decision Making for Advanced Analytics_ during my year long post-graduate study in Analytics for Business Decision-Making at George Brown College
+Repository for a linear optimization case study completed for _BUS4024 – Business Decision Making for Advanced Analytics_ during post-graduate study in Analytics for Business Decision-Making at George Brown College
 
 ## Problem Background
 JCG Global Air Services operates four aircrafts to serve the transprotation needs of the corporate HQ of JCG Company - one of which is the CESSNIA CITATION X aircraft (CE750), with a fuel burn rate of 310 gallons per hour coupled with its 13,000lb tank, and a capacity of 10 passengers.
