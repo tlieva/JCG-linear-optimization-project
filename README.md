@@ -46,7 +46,7 @@ Both are minimum fuel purchased for fee waivers at each respective location.
 
 Upon return to KMLI airport at Moline, an estimated **687 gallons** of fuel will need to be purchased to refuel the aircraft back to a total of 7,000 pounds to meet policy standards for the CE750 aircraft on arrival. 
 
-#### 2400 Landing Rule:
+### Reducing the 2400 Landing Rule:
 Some pilots argue that company procedures (2400 landing rule) could be modified to reduce flight costs to a minimum of 2000lbs of landing fuel. 
 
 The model found that reducing the company’s minimum required fuel for landing to 2,000 pounds from 2,400 results in a total cost of **$11,571** per flight.
