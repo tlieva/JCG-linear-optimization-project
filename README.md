@@ -15,7 +15,7 @@ The flight details and aircraft limitations are as followed:
 
 #### Project Files:
 - [SAS Code Solution](https://github.com/tlieva/JCG-linear-optimization-project/blob/7e963c1bb737e1c912ba02ed476fba3302ee99d3/JCG-code.sas)
-- [SAS Code Solution: Adjsuted 2400-Rule](https://github.com/tlieva/JCG-linear-optimization-project/blob/699be70d1f11c881e1f50c7b18372cb396031a5e/JCG-code-2.sas)
+- [SAS Code Solution: Adjusted 2400-Rule](https://github.com/tlieva/JCG-linear-optimization-project/blob/699be70d1f11c881e1f50c7b18372cb396031a5e/JCG-code-2.sas)
 
 
 ## Summary of Methodology
