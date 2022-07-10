@@ -55,4 +55,4 @@ When looking at the potential yearly savings, we know that the total flight hour
 
 Given a reduction in the 2400 landing rule, the yearly cost of this scenario is therefore **$417,841.67**. In comparison, to the accumulated cost of $11,645 per 7.2h flight of the first scenario, with a yearly cost of **$420,513.89**. The savings brought by the reduction is an estimated $2,672.22 - representing **0.64% in savings**, **in comparison to the 17% reduction in fuel**.
 
-Due to the minimal cost-savings from reducing 2400-landing rule to 2000 lbs, it is not recommended to be implemented at the expense of reducing safety cushion. 
+Due to the minimal cost-savings from reducing 2400-landing rule to 2000 lbs, a reduction to the 2400-landing rule is not recommended to be implemented at the expense of reducing safety cushion. 
