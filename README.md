@@ -5,7 +5,7 @@ Repository for a linear optimization case study completed for _BUS4024 – Busin
 ## Problem Background
 JCG Global Air Services operates four aircrafts to serve the transprotation needs of the corporate HQ of JCG Company - one of which is the CESSNIA CITATION X aircraft (CE750), with a fuel burn rate of 310 gallons per hour coupled with its 13,000lb tank, and a capacity of 10 passengers. Aircrafts are located at Moline, Illonois.
 
-An upcoming four-legged flight from Moline to Boston, the New York area, Dallas, and back to Moline, has been scheduled for the CEO and CFO of the JCG Corporation using the CE750 aircraft. 
+An upcoming four-legged flight from Moline to Boston, the New York area, Dallas, and back to Moline, has been scheduled for the CEO and CFO of the JCG Corporation using the CE750 aircraft. Six additional passengers will be picked up along the flight path; 2 in Boston, 4 in NY.
 
 A cost-minimizing fuel plan is required for the upcoming flight that will take into consideration the differences in fuel prices at each airport and ramp fees levied at destination airports if fuel purchases fail to meet specified minimums. This include the company’s “safety stock” policy specifying the minimum amount of fuel required for each landing at 2,400 pounds. Upon arrival back at Moline, the aircraft needs a mnimium starting fuel of 7,000lb.
 
@@ -24,7 +24,7 @@ The linear optimization model was developed in SAS via the PROC OPTMODEL stateme
 The model took into consideration of the following constraints:
 - Fuel prices at each airport, where fuel is cheaper if purchased at the start of the flight at Moline
 - Ramp fees charged if specified minimums are not met at landing destinations
-- Aircraft weight limits for takeoffs and landing
+- Aircraft weight limits for takeoffs and landing (including passenger weight and basic opeating weight of the aircraft)
 - Fuel tank capacity
 - 2400 landing rule which requires the aircraft to land with at least 2400 pounds of fuel
 
@@ -36,7 +36,9 @@ Based on the objective of this case, the following two decision variables were d
 
 Note: x2 = binary where 0 = not purchased, 1 = purchased
 
-Constraints were created for each landing destination airport where ramp fees paid is dependent on the gallons of fuel purchase at each respective landing destinations. Non-Negativity Constraints were also included in the model.
+Additional constraints that were also included in the model:
+- **Conditional constraints** for each landing destination airport such that ramp fees paid (x2(i)), is dependent on the gallons of fuel purchase at each respective landing destinations. 
+- **Non-Negativity constraints** to ensure each decision variable will be positive.
 
 The complete mathematical model can be found in the provided sample code linked above.
 
