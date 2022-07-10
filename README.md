@@ -1,1 +1,1 @@
-# JCG-linear-op-project
+# JCG Global Air Service (Linear Optimization Project)
