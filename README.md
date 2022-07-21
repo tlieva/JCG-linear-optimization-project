@@ -21,13 +21,6 @@ The flight details and aircraft limitations are as followed:
 ## Summary of Methodology
 The linear optimization model was developed in SAS via the PROC OPTMODEL statement to invoke the OPTMODEL procedure. The objective funciton (z) was minimized subject to the constraints defined in given linear programming code in SAS.
 
-The model took into consideration of the following constraints:
-- Fuel prices at each airport, where fuel is cheaper if purchased at the start of the flight at Moline
-- Ramp fees charged if specified minimums are not met at landing destinations
-- Aircraft weight limits for takeoffs and landing (including passenger weight and basic opeating weight of the aircraft)
-- Fuel tank capacity
-- 2400 landing rule which requires the aircraft to land with at least 2400 pounds of fuel
-
 Based on the objective of this case, the following two decision variables were declared:
 1. Let **x1(i)** = gallon of fuel purchased at each airport, where i = destination 0, 1,2,3,4
 2. Let **x2(i)** = ramp fees paid at each airport, where i = destination 0, 1, 2, 3, 4
@@ -36,9 +29,24 @@ Based on the objective of this case, the following two decision variables were d
 
 Note: x2 = binary where 0 = not purchased, 1 = purchased
 
-Additional constraints that were also included in the model:
-- **Conditional constraints** for each landing destination airport such that ramp fees paid (x2(i)), is dependent on the gallons of fuel purchase at each respective landing destinations. 
-- **Non-Negativity constraints** to ensure each decision variable will be positive.
+### Objective function:
+<img width="834" alt="Screen Shot 2022-07-21 at 6 46 17 PM" src="https://user-images.githubusercontent.com/106416383/180327550-751ec58c-273d-4f76-8e74-6db9dcde2f51.png">
+
+### Constraints:
+The model took into consideration of three main constraints:
+1. **Fuel**; including the fuel tank capacity and 2400 landing rule which requires the aircraft to land with at least 2400 pounds of fuel
+
+<img width="749" alt="Screen Shot 2022-07-21 at 6 44 41 PM" src="https://user-images.githubusercontent.com/106416383/180327395-08655e82-fe78-4025-b5f7-1467473d10a0.png">
+
+2. **Weight Limitations of the Aircraft** for takeoffs and landing (including passenger weight and basic opeating weight of the aircraft)
+
+<img width="696" alt="Screen Shot 2022-07-21 at 6 43 53 PM" src="https://user-images.githubusercontent.com/106416383/180327321-e9bbcf8c-ed64-444c-b89c-48167ac71fb6.png">
+
+3. **Ramp Fees Levied**; where fess levied at each landing destination airport (x2(i)), is dependent on the gallons of fuel purchase at each respective landing destinations. 
+
+<img width="677" alt="Screen Shot 2022-07-21 at 6 41 16 PM" src="https://user-images.githubusercontent.com/106416383/180327068-9b2867b5-a0c6-4b40-a522-dcb252f6bc24.png">
+
+Additional **non-negativity constraints** was included in the model to ensure each decision variable will be positive.
 
 The complete mathematical model can be found in the provided sample code linked above.
 
