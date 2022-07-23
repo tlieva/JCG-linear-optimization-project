@@ -19,13 +19,16 @@ The flight details and aircraft limitations are as followed:
 
 
 ## Summary of Methodology
-The linear optimization model was developed in SAS via the PROC OPTMODEL statement to invoke the OPTMODEL procedure. The objective funciton (z) was minimized subject to the constraints defined in given linear programming code in SAS.
+
+Conversion: 6.7lbs/gallon
+
+The linear optimization model was developed in SAS by invoking the OPTMODEL procedure. The objective funciton (z) was minimized subject to the constraints defined in given linear programming code in SAS.
 
 Based on the objective of this case, the following two decision variables were declared:
 1. Let **x1(i)** = gallon of fuel purchased at each airport, where i = destination 0, 1,2,3,4
 2. Let **x2(i)** = ramp fees paid at each airport, where i = destination 0, 1, 2, 3, 4
 
-(i) = 0:Moline, 1:Bostone, 2:NY, 3:Dallas, 4:Moline (Return) 
+(i) = 0:Moline, 1:Boston, 2:NY, 3:Dallas, 4:Moline (Return) 
 
 Note: x2 = binary where 0 = not purchased, 1 = purchased
 
@@ -50,7 +53,14 @@ Additional **non-negativity constraints** was included in the model to ensure ea
 
 The complete mathematical model can be found in the provided sample code linked above.
 
+## Model Output:
+<img width="547" alt="Screen Shot 2022-07-22 at 7 37 53 PM" src="https://user-images.githubusercontent.com/106416383/180580802-ed96ecd6-4c8d-4547-80bf-5176f7f7f801.png">
+
 ## Summary of Solution: Cost-Minimizing Strategy
+
+<img width="722" alt="Screen Shot 2022-07-22 at 8 32 21 PM" src="https://user-images.githubusercontent.com/106416383/180583336-bc1518bc-49c2-4588-9ca0-736f38d96d8d.png">
+
+
 Taking into consideration of the aircraft weight limits at takeoff and landings, fuel capacity, and minimum fuel requirement at landing, the model identified that the most optimal solution was for fuel to be purchased prior to the start of the flight where cost is cheapest, thereby, negating the need to refuel the aircraft at Boston where cost is highest. This will minimize the total accumulated costs of fuel and ramp fees levied at destination airports to a total cost of **$11,645**.
 
 As fuel cost is cheaper if bought at home, an estimated **896 gallons** of fuel is recommended to be purchased at KMLI airport in Moline prior to the start of the flight. This will reduce the volume of fuel needed to be purchased at the next landing destination in Boston to zero where fuel price is the highest. This is in addition to having the highest set fuel purchase minimum, therefore, ramp fees should be paid instead. 
