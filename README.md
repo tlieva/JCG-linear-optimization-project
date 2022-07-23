@@ -20,7 +20,7 @@ The flight details and aircraft limitations are as followed:
 
 ## Summary of Methodology
 
-Conversion: 6.7lbs/gallon
+**Conversion: 6.7lbs/gallon**
 
 The linear optimization model was developed in SAS by invoking the OPTMODEL procedure. The objective funciton (z) was minimized subject to the constraints defined in given linear programming code in SAS.
 
