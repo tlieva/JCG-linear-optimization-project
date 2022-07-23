@@ -54,16 +54,16 @@ Additional **non-negativity constraints** was included in the model to ensure ea
 The complete mathematical model can be found in the provided sample code linked above.
 
 ## Model Output:
-<img width="547" alt="Screen Shot 2022-07-22 at 7 37 53 PM" src="https://user-images.githubusercontent.com/106416383/180580802-ed96ecd6-4c8d-4547-80bf-5176f7f7f801.png">
+<img width="447" alt="Screen Shot 2022-07-22 at 7 37 53 PM" src="https://user-images.githubusercontent.com/106416383/180580802-ed96ecd6-4c8d-4547-80bf-5176f7f7f801.png">
 
 ## Summary of Solution: Cost-Minimizing Strategy
 
+### Fuel Plan
 <img width="722" alt="Screen Shot 2022-07-22 at 8 32 21 PM" src="https://user-images.githubusercontent.com/106416383/180583336-bc1518bc-49c2-4588-9ca0-736f38d96d8d.png">
-
 
 Taking into consideration of the aircraft weight limits at takeoff and landings, fuel capacity, and minimum fuel requirement at landing, the model identified that the most optimal solution was for fuel to be purchased prior to the start of the flight where cost is cheapest, thereby, negating the need to refuel the aircraft at Boston where cost is highest. This will minimize the total accumulated costs of fuel and ramp fees levied at destination airports to a total cost of **$11,645**.
 
-As fuel cost is cheaper if bought at home, an estimated **896 gallons** of fuel is recommended to be purchased at KMLI airport in Moline prior to the start of the flight. This will reduce the volume of fuel needed to be purchased at the next landing destination in Boston to zero where fuel price is the highest. This is in addition to having the highest set fuel purchase minimum, therefore, ramp fees should be paid instead. 
+As fuel cost is cheaper if bought at home, an estimated **896 gallons** of fuel is recommended to be purchased at KMLI airport in Moline prior to the start of the flight. This will reduce the volume of fuel needed to be purchased at the next landing destination in Boston to zero where fuel price is the highest. This is in addition to having the highest set fuel purchase minimum. As a result, it is recommended for ramp fees to be paid instead to save on fuel costs. 
 
 In subsequent landing airports, the aircraft is recommended to be refueled at each destination after Boston to meet specified fuel purchase minimums for waivers. This will avoid additional ramp fees while ensuring sufficient fuel to reach the next destination. As such, the following estimated gallons of fuel should be purchased at each destination airport after Boston: 
 - **300 gallons** in New York
@@ -72,10 +72,17 @@ Both are minimum fuel purchased for fee waivers at each respective location.
 
 Upon return to KMLI airport at Moline, an estimated **687 gallons** of fuel will need to be purchased to refuel the aircraft back to a total of 7,000 pounds to meet policy standards for the CE750 aircraft on arrival. 
 
+### Cost Breakdown at Each Airport
+<img width="723" alt="Screen Shot 2022-07-22 at 9 47 02 PM" src="https://user-images.githubusercontent.com/106416383/180585792-e53c3a43-6bc4-428c-a015-ef12137eca93.png">
+
+
 ### Reducing the 2400 Landing Rule:
 Some pilots argue that company procedures (2400 landing rule) could be modified to reduce flight costs to a minimum of 2000lbs of landing fuel. 
 
 The model found that reducing the company’s minimum required fuel for landing to 2,000 pounds from 2,400 results in a total cost of **$11,571** per flight.
+
+#### Model Output:
+<img width="421" alt="Screen Shot 2022-07-22 at 9 03 50 PM" src="https://user-images.githubusercontent.com/106416383/180584445-ec2fd119-e690-4fa9-ae18-b9a1eec4afdd.png">
 
 When looking at the potential yearly savings, we know that the total flight hours of the present case was found to be approximately 7.2~ hours. And as the CE750 is responsible for 40% of all flight hours, and JCG flies 650 hours per year, CE750 therefore accounts for 260 hours. 
 
