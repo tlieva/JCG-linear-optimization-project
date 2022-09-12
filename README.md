@@ -22,7 +22,7 @@ The flight details and aircraft limitations are as followed:
 
 **Conversion: 6.7lbs/gallon**
 
-The linear optimization model was developed in SAS by invoking the OPTMODEL procedure. The objective funciton (z) was minimized subject to the constraints defined in given linear programming code in SAS.
+The linear optimization model was developed in SAS by invoking the OPTMODEL procedure. The objective function (z) was minimized subject to the constraints defined in given linear programming code in SAS.
 
 Based on the objective of this case, the following two decision variables were declared:
 1. Let **x1(i)** = gallon of fuel purchased at each airport, where i = destination 0, 1,2,3,4
